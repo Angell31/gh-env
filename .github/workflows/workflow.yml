@@ -40,4 +40,9 @@ jobs:
         run: |
           echo "MONGODB_USERNAME: ${{ env.MONGODB_USERNAME }}"
           echo "MONGODB_DB_NAME: ${{ env.MONGODB_DB_NAME }}"
-
+  gha_vars:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output vars
+        run: | 
+          echo "GITHUB_ACTION: ${{ GITHUB_ACTION }}"
