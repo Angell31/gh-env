@@ -45,4 +45,4 @@ jobs:
     steps:
       - name: Output vars
         run: | 
-          echo "GITHUB_ACTION: ${{ GITHUB_ACTION }}"
+          echo "GITHUB_ACTION: $GITHUB_ACTION" 
